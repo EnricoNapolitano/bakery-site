@@ -14,7 +14,7 @@ export default {
             <action-call :title="data.shopping.title" :paragraph="data.shopping.paragraph"
                 :button_label="data.shopping.button"></action-call>
         </div>
-        <products-gallery :gallery="data.gallery.slice(0, 4)"></products-gallery>
+        <products-gallery :show="true" :gallery="data.gallery.slice(0, 4)"></products-gallery>
     </section>
 </template>
 

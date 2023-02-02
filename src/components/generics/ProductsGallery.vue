@@ -1,12 +1,15 @@
 <script>
 export default {
     name: 'ProductsGallery',
-    props: { gallery: Array },
+    props: { gallery: Array, show: Boolean },
 }
 </script>
 <template>
     <ul>
-        <li v-for="item in gallery" :key="item.id"><img :src="item.src" :alt="item.title"></li>
+        <li v-for="item in gallery" :key="item.id">
+            <img :src="item.src" :alt="item.title">
+            <h3 v-if="show">{{ item.title }}</h3>
+        </li>
     </ul>
 </template>
 
