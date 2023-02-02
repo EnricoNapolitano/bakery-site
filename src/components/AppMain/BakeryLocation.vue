@@ -17,10 +17,10 @@ export default {
             <li v-for="pic in data.store" :key="pic.id"><img :src="pic.img" alt="store picture"></li>
         </ul>
         <div class="row d-flex">
-            <div class="location a">
+            <div class="location x">
                 <store-info city="New York"></store-info>
             </div>
-            <div class="location b">
+            <div class="location y">
                 <store-info city="London"></store-info>
             </div>
         </div>
@@ -57,12 +57,12 @@ export default {
         flex-grow: 1;
     }
 
-    .location.a {
+    .location.x {
         background-color: $blue1;
 
     }
 
-    .location.b {
+    .location.y {
         background-color: $pink1;
     }
 }
