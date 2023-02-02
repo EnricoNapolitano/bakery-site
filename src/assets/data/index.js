@@ -67,6 +67,19 @@ const data = {
     event: {
         label: 'CORPORATE & WEDDINGS',
         title: 'Baking Special Moments',
+        hover: [{
+            event: 'corporate',
+            label: 'INTERNATIONAL BAKERY',
+            title: 'Corporate Events',
+            button: 'Explore more',
+        },
+        {
+            event: 'wedding',
+            label: 'PRIVATE DINING HALL',
+            title: 'Weddings & Parties',
+            button: 'Explore more',
+        },
+        ],
         img: [
             {
                 event: 'corporate',
