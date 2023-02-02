@@ -18,7 +18,7 @@ export default {
 @use '../../assets/scss/partials/variables' as*;
 
 div {
-    width: 530px;
+    max-width: 530px;
 }
 
 h4,
