@@ -31,5 +31,11 @@ export default {
     img {
         max-width: 100%;
     }
+
+    .text-hover {
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
 }
 </style>

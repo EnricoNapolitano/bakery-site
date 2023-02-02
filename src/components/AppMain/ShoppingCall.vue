@@ -29,6 +29,17 @@ export default {
         font-size: 2.5rem;
     }
 
+    .text-hover {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            padding: 10px
+        }
+    }
+
     div {
         text-align: center;
     }

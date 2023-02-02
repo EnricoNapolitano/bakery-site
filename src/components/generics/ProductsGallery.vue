@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'ProductsGallery',
-    props: { gallery: Array, show: Boolean },
+    props: { gallery: Array, show: Boolean, title: String, label: String, price: String },
 }
 </script>
 <template>
@@ -12,12 +12,17 @@ export default {
                 <h3>{{ item.title }}</h3>
                 <div>{{ item.price }}</div>
             </div>
-            <div class="text-hover"></div>
+            <div class="text-hover">
+                <h2>{{ title || 'Lorem Ipsum' }}</h2>
+                <h4>{{ label || 'AMET CONSECTETUR'}}</h4>
+            </div>
         </li>
     </ul>
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/mixins' as*;
+
 h3 {
     padding: 15px 0;
     font-family: "Playfair Display", serif;
@@ -35,17 +40,12 @@ li {
     position: relative;
 
     &:hover .text-hover {
-        display: inline-block;
+        @include center-align;
+        color: white
     }
 }
 
 .text-hover {
-    display: none;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    right: 0;
+    @include h-gallery;
 }
 </style>
