@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="h-event">
         <h4 v-if="label">{{ label }}</h4>
         <h2 v-if="title">{{ title }}</h2>
         <p v-if="paragraph">{{ paragraph }}</p>
