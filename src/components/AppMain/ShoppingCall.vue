@@ -50,5 +50,9 @@ export default {
     .b {
         top: 40%
     }
+
+    .text-hover {
+        bottom: 78px;
+    }
 }
 </style>
