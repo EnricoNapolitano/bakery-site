@@ -95,3 +95,27 @@ li {
     background-color: white;
     color: $violet4;
 }
+
+// buttons gallery
+.b {
+    height: 100px;
+    width: 50px;
+
+    color: white;
+    background-color: rgba($violet4, $alpha: 0.4);
+    border: transparent;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+}
+
+.prev {
+    left: 0;
+    transform: translate(40%, -50%);
+}
+
+.next {
+    right: 0;
+    transform: translate(0, -50%);
+}
