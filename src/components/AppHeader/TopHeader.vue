@@ -19,3 +19,11 @@ export default {
         <nav-menu :menu="upperCaseMenu"></nav-menu>
     </header>
 </template>
+
+<style lang="scss">
+@use '../../assets/scss/partials/variables' as*;
+
+header {
+    background-color: $violet;
+}
+</style>
