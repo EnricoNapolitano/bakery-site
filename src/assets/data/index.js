@@ -1,5 +1,5 @@
 const data = {
-    //nav for top header & top footer
+    //nav for top header & top footer 
     nav: ['Home', 'Shop', 'About', 'Gallery', 'Locations', 'Journal', 'Contact', 'My Account'],
 
     //hero jumbo

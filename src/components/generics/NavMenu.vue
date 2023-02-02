@@ -7,7 +7,12 @@ export default {
 
 <template>
     <ul>
-        <li v-for="item in menu" :key="item"><a href="#">{{ item }}</a></li>
+        <li v-for="item in menu" :key="item">
+            <a href="#">{{ item }}</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
     </ul>
 </template>
 
