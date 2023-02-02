@@ -23,36 +23,43 @@ const data = {
             id: '1',
             title: 'choco chip cookies',
             src: '/src/assets/img/choco-chip-cookies-400x510.jpg',
+            price: '$19.00 - $39.00',
         },
         {
             id: '2',
             title: 'strawberry jam cookies',
             src: '/src/assets/img/strawberry-jam-cookies-400x510.jpg',
+            price: '$24.00 - $62.00',
         },
         {
             id: '3',
             title: 'strawberry donut',
             src: '/src/assets/img/strawberry-donut-400x510.jpg',
+            price: '$24.00 - $42.00',
         },
         {
             id: '4',
             title: 'perfect macarons',
             src: '/src/assets/img/perfect-macarons-400x510.jpg',
+            price: '$18.00 - $52.00',
         },
         {
             id: '5',
             title: 'cherry cake',
             src: '/src/assets/img/cherry-cake-400x510.jpg',
+            price: '$24.00 - $62.00',
         },
         {
             id: '6',
             title: 'cookies with ice cream',
             src: '/src/assets/img/cookies-with-ice-cream-400x510.jpg',
+            price: '$18.00 - $52.00',
         },
         {
             id: '7',
             title: 'blackberry stuffed bread',
             src: '/src/assets/img/blackberry-stuffed-bread-400x510.jpg',
+            price: '$19.00 - $39.00',
         },
     ],
 
