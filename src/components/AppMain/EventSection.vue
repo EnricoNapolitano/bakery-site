@@ -13,7 +13,12 @@ export default {
             <action-call :label="data.event.label" :title="data.event.title"></action-call>
         </div>
         <ul class="d-flex jc-between">
-            <li v-for="img in data.event.img" :key="img.event"><img :src="img.src" :alt="img.event"></li>
+            <li v-for="(img, i) in data.event.img" :key="img.event">
+                <img :src="img.src" :alt="img.event">
+                <img :src="img.hover" :alt="img.event" class="hover">
+                <action-call :label="data.event.hover[i].label" :title="data.event.hover[i].title"
+                    :button_label="data.event.hover[i].button" class="hover"></action-call>
+            </li>
         </ul>
     </section>
 </template>
@@ -22,6 +27,10 @@ export default {
 @use '../../assets/scss/partials/mixins' as*;
 
 #event-section {
+    .hover {
+        display: none;
+    }
+
     h4 {
         font-size: 0.8rem;
         padding-bottom: 25px;
@@ -43,6 +52,35 @@ export default {
     li {
         margin: 0 30px;
         padding: 0;
+        position: relative;
+
+        &:hover {
+            img {
+                display: none;
+            }
+
+            img.hover {
+                display: inline-block;
+            }
+
+            .h-event {
+                display: block;
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+
+            h4 {
+                padding: 10px;
+                color: white;
+            }
+
+            h2 {
+                padding-bottom: 30px;
+                color: white;
+            }
+        }
     }
 
     img {
