@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'ProductsGallery',
-    props: { gallery: Array, show: Boolean, title: String, label: String, price: String },
+    props: { gallery: Array, show: Boolean, },
 }
 </script>
 <template>
@@ -12,9 +12,13 @@ export default {
                 <h3>{{ item.title }}</h3>
                 <div>{{ item.price }}</div>
             </div>
-            <div class="text-hover">
-                <h2>{{ title || 'Lorem Ipsum' }}</h2>
-                <h4>{{ label || 'AMET CONSECTETUR'}}</h4>
+            <div v-if="!show" class="text-hover">
+                <h2>{{ item.title || 'Lorem Ipsum' }}</h2>
+                <h4>{{ item.type || 'AMET CONSECTETUR' }}</h4>
+                <div>{{ item.price || '' }}</div>
+            </div>
+            <div v-else class="text-hover">
+                <h4>SELECT OPTIONS / QUICK VIEW</h4>
             </div>
         </li>
     </ul>

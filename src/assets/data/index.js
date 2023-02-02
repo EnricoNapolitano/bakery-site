@@ -22,24 +22,28 @@ const data = {
         {
             id: '1',
             title: 'choco chip cookies',
+            type: 'Cookies',
             src: '/src/assets/img/choco-chip-cookies-400x510.jpg',
             price: '$19.00 - $39.00',
         },
         {
             id: '2',
             title: 'strawberry jam cookies',
+            type: 'Cookies',
             src: '/src/assets/img/strawberry-jam-cookies-400x510.jpg',
             price: '$24.00 - $62.00',
         },
         {
             id: '3',
             title: 'strawberry donut',
+            type: 'Donut',
             src: '/src/assets/img/strawberry-donut-400x510.jpg',
             price: '$24.00 - $42.00',
         },
         {
             id: '4',
             title: 'perfect macarons',
+            type: 'Cookies',
             src: '/src/assets/img/perfect-macarons-400x510.jpg',
             price: '$18.00 - $52.00',
         },

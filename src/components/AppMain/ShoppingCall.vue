@@ -30,13 +30,9 @@ export default {
     }
 
     .text-hover {
-        h2 {
-            font-size: 1.5rem;
-        }
-
         h4 {
-            font-size: 1rem;
-            padding: 10px
+            font-size: 0.8rem;
+            font-weight: lighter;
         }
     }
 

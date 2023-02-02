@@ -34,7 +34,17 @@ export default {
 
     .text-hover {
         h2 {
-            font-size: 2.8rem;
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-weight: lighter;
+            padding: 20px
+        }
+
+        div {
+            font-size: 1.5rem;
         }
     }
 }
