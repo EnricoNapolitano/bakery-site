@@ -15,6 +15,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../../assets/scss/partials/variables' as *;
 @use '../../assets/scss/partials/mixins' as *;
 
 #delivery {
@@ -32,6 +33,10 @@ export default {
 
     button {
         @include white-btn;
+
+        &:hover {
+            background-color: $violet2;
+        }
     }
 }
 </style>

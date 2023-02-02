@@ -92,12 +92,20 @@ li {
     font-weight: 600;
 
     cursor: pointer;
+
+    &:hover {
+        background-color: rgba($violet4, $alpha: 0.5);
+    }
 }
 
 .white-btn {
     border: transparent;
     background-color: white;
     color: $violet4;
+
+    &:hover {
+        background-color: $violet3;
+    }
 }
 
 // buttons gallery
