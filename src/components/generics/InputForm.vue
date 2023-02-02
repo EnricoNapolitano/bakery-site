@@ -1,12 +1,18 @@
 <script>
 export default {
     name: 'InputForm',
-    data() { return { value: '' } },
-    props: { placeholder: String, text: String }
+    data() { return { value: '', saveValue: '' } },
+    props: { placeholder: String, text: String },
+    methods: {
+        getValue() {
+            this.saveValue = this.value;
+            this.value = '';
+        }
+    }
 }
 </script>
 <template>
-    <form>
+    <form @submit.prevent="getValue">
         <input type="text" v-model.trim="value" :placeholder="placeholder || 'Type here...'">
         <button class="btn"> {{ text || 'SEND' }}</button>
     </form>
