@@ -64,11 +64,7 @@ export default {
             }
 
             .h-event {
-                display: block;
-                position: absolute;
-                bottom: 50%;
-                left: 50%;
-                transform: translate(-50%, 50%);
+                @include h-event;
             }
 
             h4 {
