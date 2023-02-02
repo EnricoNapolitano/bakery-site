@@ -8,7 +8,7 @@ export default {
 }
 </script>
 <template>
-    <section id="delivery" class="d-flex ai-center">
+    <section id="delivery" class="d-flex jc-center ai-center pr-400">
         <action-call :label="data.delivery.label" :title="data.delivery.title" :button_label="data.delivery.button"
             class="ml-450"></action-call>
     </section>
