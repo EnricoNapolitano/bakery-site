@@ -48,6 +48,6 @@ export default {
 }
 
 .bg-dark {
-    height: 800px;
+    height: 100%;
 }
 </style>
