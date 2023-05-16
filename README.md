@@ -1,5 +1,5 @@
 # Bakery Website
-This repository is about building a bakery site using Vue components
+This repository is about building a bakery site using Vue + Vite
 
 <img src="preview-1.png">
 
